@@ -109,6 +109,16 @@ export default (() => {
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Josefin+Sans:wght@200;300&display=swap" rel="stylesheet" />
+
+<div class="mouse-glow" id="mouse-glow"></div>
+<script>{`
+  const glow = document.getElementById('mouse-glow');
+  document.addEventListener('mousemove', (e) => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+  });
+`}</script>
+
       </head>
     )
   }

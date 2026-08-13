@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: enter the voyde
 ---
 
 This is a blank Quartz installation.

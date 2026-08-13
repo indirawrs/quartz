@@ -84,3 +84,17 @@ h1, h2, h3 {
   pointer-events: none;
   z-index: -1;
 }
+
+/* mouse glow effect */
+.mouse-glow {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(150,220,190,0.15) 0%, rgba(160,180,255,0.08) 40%, transparent 70%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+  z-index: 0;
+  mix-blend-mode: screen;
+}
